@@ -57,18 +57,19 @@ class pirates {
 
 class yonkou: pirates {
     
+    var piratesGroup: String!
     override init(name: String, devilFruit : 悪魔の実 ) {
         super.init(name: name, devilFruit: devilFruit)
         
         switch name {
         case "シャンクス":
-            print("赤髪海賊団")
+            piratesGroup = "赤髪海賊団"
         case "カイドウ":
-            print("百獣海賊団")
+            piratesGroup = "百獣海賊団"
         case "シャーロット・リンリン":
-            print("ビッグマム海賊団")
+            piratesGroup = "ビッグマム海賊団"
         case "マーシャル・D・ティーチ":
-            print("黒ひげ海賊団")
+            piratesGroup = "黒ひげ海賊団"
 
         default:
             print("none")
